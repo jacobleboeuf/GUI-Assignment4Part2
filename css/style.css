@@ -1,0 +1,98 @@
+/**
+ * File: style.css
+ * GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
+ *
+ * - This assignment uses HTML, CSS, JQuery and JavaScript to create a Multiplication
+     table based off of solely user input via a form, done so completely dynamically,
+ *   and saves said tables into jQuery tabs, which can be selected and deleted respectively.
+ *
+ *
+ * - This file styles the existing HTML to make the form and table easy to view
+ *   and stylistically pleasing, as well as easy to understand
+ *
+ * Jacob Leboeuf, UMass Lowell Computer Science, jacob_leboeuf@student.uml.edu,
+ * Copyright (c) 2021 by Jacob. All rights reserved. May be freely copied or
+ * excerpted for educational purposes with credit to the author.
+ * updated by JL on November 15, 2021 at 2:01 PM
+**/
+
+body {
+    text-align: center;
+    border: solid;
+    width: 80%;
+    padding-bottom: 30em;
+    margin: auto;
+    margin-top: 1px;
+}
+td {
+    border-bottom: solid;
+    border-left: solid;
+}
+#minColSlider, #maxColSlider, #minRowSlider, #maxRowSlider {
+    border: solid;
+    border-top: none;
+    margin: 0;
+}
+table {
+    margin: auto;
+    border: solid;
+    border-collapse: collapse;
+    border-width: thick;
+    table-layout: fixed;
+    position: relative;
+}
+input[type=text]{
+    width: 4em;
+}
+button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: pink;
+}
+#selectTab, #removeTab {
+    width: 190px;
+    margin-top: 10px;
+    border: solid;
+    margin-right: 20px;
+}
+#table td, #table th {
+    min-width: 30px;
+}
+#userInput {
+    font-weight: bold;
+}
+#infoText {
+    margin: 0;
+}
+#minColText p, #maxColText p, #minRowText p, #maxRowText p, #infotext {
+    font-weight: bold;
+    color: red;
+    overflow: hidden;
+    margin: 0;
+}
+#table tr:nth-child(odd) td:nth-child(even) {
+    background-color: pink;
+}
+#table tr:nth-child(even) td:nth-child(odd) {
+    background-color: pink;
+}
+#table {
+    font-weight: bold;
+    border-color: white;
+    margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 380px;
+    font-size: 16px;
+    font-family: serif;
+}
+#row {
+    color: white;
+    background-color: black;
+}
+th {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
